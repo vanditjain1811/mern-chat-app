@@ -1,0 +1,25 @@
+{
+  "name": "mern-chat-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "server": "nodemon backend/server.js",
+    "build": "npm install --legacy-peer-deps && npm install --legacy-peer-deps --prefix frontend && npm run build --prefix frontend"
+  },
+  "author": "vandit",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.3",
+    "express-async-handler": "^1.2.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.2.0",
+    "nodemon": "^3.1.0",
+    "react-lottie": "^1.2.4",
+    "react-notification-badge": "^1.5.1",
+    "socket.io": "^4.7.4"
+  }
+}
