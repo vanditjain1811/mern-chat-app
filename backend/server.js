@@ -12,9 +12,9 @@ app.use(express.json());
 dotenv.config();
 connectDB();
 
-app.get("/", (req, res) => {
-  res.send("api running");
-});
+// app.get("/", (req, res) => {
+//   res.send("api running");
+// });
 
 app.use("/api/user", userRoutes);
 app.use("/api/chat", chatRoutes);
